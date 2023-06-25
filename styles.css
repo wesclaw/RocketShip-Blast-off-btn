@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+}
+
+button{
+  padding: 150px 50px;
+  background-color: rgb(209, 46, 35);
+  border: none;
+  color: ghostwhite;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  box-shadow: 10px 10px 10px black;
+  text-shadow: 1px 1px 5px black;
+}
+
+button:active{
+  box-shadow: inset 1px 1px 1px 3px  rgba(0, 0, 0, 0.26);
+}
+
+button:hover{
+  background-color: rgb(219, 79, 79);
+}
+
+.rocket-ship{
+  animation-name: blast;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  display: none;
+  position: absolute;
+}
+
+@keyframes blast {
+   
+    0%{transform: translateY(-10%);transition: ease 0.5s;}
+    50%{transform: translateY(10%);transition: ease 0.5s; rotate: -90deg;}
+    100%{transform: translateY(-300%);}
+
+}
