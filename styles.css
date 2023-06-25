@@ -13,7 +13,7 @@ body{
 
 button{
   padding: 150px 50px;
-  background-color: rgb(209, 46, 35);
+  background-color: rgba(209, 47, 35, 0.726);
   border: none;
   color: ghostwhite;
   font-weight: bold;
